@@ -1,4 +1,13 @@
 
+at least on raspi, the 'pip install v4l2capture' version is old
+* it does NOT have all the funcs below
+build from source
+* download zip file (or git clone)
+* ./setup.py build
+* if needed, sudo pip uninstall v4l2capture (to get rid of old)
+* sudo ./setup.py install
+
+
 https://github.com/atareao/python3-v4l2capture/blob/master/v4l2capture.c
 .. line 751 shows the video-device methods available:
 
