@@ -1,0 +1,300 @@
+[4535944:motion] [NTC] [ALL] [Feb 22 09:01:05] motion_startup: Using log type (ALL) log level (NTC)
+[4535944:motion] [NTC] [ALL] [Feb 22 09:01:05] become_daemon: Motion going to daemon mode
+[4535944:motion] [NTC] [ALL] [Feb 22 09:01:05] become_daemon: Created process id file /home/pi/raspi/motion/motion.pid. Process ID is 1157
+[4535944:motion] [NTC] [ALL] [Feb 22 09:01:05] motion_startup: Motion running as daemon process
+[4535944:motion] [NTC] [ENC] [Feb 22 09:01:05] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Feb 22 09:01:05] main: Camera ID: 0 is from motion.conf
+[0:motion] [NTC] [ALL] [Feb 22 09:01:05] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Feb 22 09:01:05] main: Waiting for threads to finish, pid: 1157
+[1:ml1] [NTC] [ALL] [Feb 22 09:01:05] motion_init: Camera 0 started: motion detection Enabled
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] vid_start: Opening V4L2 device
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_start: Using videodevice /dev/video0 and input -1
+[0:wc0] [NTC] [STR] [Feb 22 09:01:05] http_bindsock: listening on 127.0.0.1 port 8080
+[0:wc0] [NTC] [STR] [Feb 22 09:01:05] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_get_capability: 
+------------------------
+cap.driver: "uvcvideo"
+cap.card: "USB  Live  Camera   audio  Devi"
+cap.bus_info: "usb-3f980000.usb-1.5"
+cap.capabilities=0x84A00001
+------------------------
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_select_input: name = "Camera 1", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_set_pix_format: Configuration palette index 17 (YU12) doesn't work.
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_set_pix_format: Supported palettes:
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_set_pix_format: (0) MJPG (Motion-JPEG)
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_set_pix_format: 0 - Motion-JPEG (compressed : 1) (0x47504a4d)
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_set_pix_format: (1) YUYV (YUYV 4:2:2)
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_set_pix_format: 1 - YUYV 4:2:2 (compressed : 0) (0x56595559)
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000008
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_set_pix_format: Selected palette YUYV
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: found control 0x00980900, "Brightness", range -64,64 
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: 	"Brightness", default 0, current 0
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: found control 0x00980901, "Contrast", range 0,64 
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: 	"Contrast", default 28, current 28
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: found control 0x00980902, "Saturation", range 0,128 
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: 	"Saturation", default 64, current 64
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: found control 0x00980903, "Hue", range -40,40 
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: 	"Hue", default 0, current 0
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,2 
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: 	"Power Line Frequency", default 2, current 2
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: found control 0x00980910, "Gamma", range 48,500 
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: 	"Gamma", default 108, current 108
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: found control 0x00980913, "Gain", range 0,100 
+[1:ml1] [NTC] [VID] [Feb 22 09:01:05] v4l2_scan_controls: 	"Gain", default 0, current 0
+[1:ml1] [NTC] [ALL] [Feb 22 09:01:05] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Feb 22 09:01:06] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Feb 22 09:01:06] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Feb 22 09:40:44] event_newfile: File of type 8 saved to: /mnt/synology/motion/01-20200222094043.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 09:40:44] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [EVT] [Feb 22 09:40:44] event_newfile: File of type 1 saved to: /mnt/synology/motion/01-20200222094043-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 09:40:44] event_newfile: File of type 1 saved to: /mnt/synology/motion/01-20200222094044-00.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 09:41:44] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Feb 22 10:58:38] event_newfile: File of type 8 saved to: /mnt/synology/motion/02-20200222105838.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 10:58:38] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [EVT] [Feb 22 10:58:38] event_newfile: File of type 1 saved to: /mnt/synology/motion/02-20200222105838-01.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 10:59:38] mlp_actions: End of event 2
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:03] event_newfile: File of type 8 saved to: /mnt/synology/motion/03-20200222121903.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 12:19:03] motion_detected: Motion detected - starting event 3
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:03] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121903-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:03] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121903-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:04] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121904-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:04] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121904-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:05] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121905-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:05] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121905-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:06] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121906-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:06] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121906-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:07] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121907-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:07] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121907-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:08] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121908-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:08] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121908-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:09] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121909-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:09] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121909-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:10] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121910-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:10] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121910-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:11] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121911-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:12] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121912-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:15] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121915-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:19] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121919-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:19] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121919-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:20] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121920-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:20] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121920-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:21] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121921-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:21] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121921-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:22] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121922-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:24] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121924-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:24] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121924-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:25] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121925-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:25] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121925-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:34] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121934-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:35] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121935-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:19:58] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222121958-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:20:00] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122000-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:20:06] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122006-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:20:06] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122006-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:20:14] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122014-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:20:25] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122025-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:20:25] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122025-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:20:26] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122026-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:20:26] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122026-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:11] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122111-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:12] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122112-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:12] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122112-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:13] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122113-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:14] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122114-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:14] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122114-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:15] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122115-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:15] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122115-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:16] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122116-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:16] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122116-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:17] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122117-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:29] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122129-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:21:30] event_newfile: File of type 1 saved to: /mnt/synology/motion/03-20200222122130-00.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 12:22:30] mlp_actions: End of event 3
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:14] event_newfile: File of type 8 saved to: /mnt/synology/motion/04-20200222122614.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 12:26:14] motion_detected: Motion detected - starting event 4
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:14] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122614-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:15] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122615-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:15] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122615-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:16] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122616-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:16] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122616-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:17] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122617-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:17] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122617-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:18] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122618-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:18] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122618-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:19] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122619-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:19] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122619-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:20] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122620-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:20] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122620-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:21] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122621-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:21] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122621-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:22] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122622-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:22] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122622-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:23] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122623-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:23] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122623-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:24] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122624-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:29] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122628-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:29] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122629-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:30] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122629-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:30] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122630-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:31] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122630-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:31] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122631-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:32] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122631-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:32] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122632-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:33] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122632-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:33] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122633-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:34] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122633-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:34] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122634-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:35] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122634-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:35] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122635-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:36] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122635-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:36] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122636-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:37] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122636-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:37] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122637-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:38] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122637-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:38] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122638-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:39] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122638-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:59] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122659-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:26:59] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122659-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:00] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122700-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:00] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122700-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:01] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122701-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:01] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122701-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:02] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122702-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:02] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122702-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:03] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122703-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:03] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122703-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:04] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122704-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:04] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122704-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:05] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122705-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:05] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122705-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:06] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122706-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:06] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122706-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:07] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122707-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:07] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122707-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:08] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122708-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:08] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122708-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:09] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122709-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:12] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122712-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 12:27:17] event_newfile: File of type 1 saved to: /mnt/synology/motion/04-20200222122717-00.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 12:28:17] mlp_actions: End of event 4
+[1:ml1] [NTC] [EVT] [Feb 22 12:41:09] event_newfile: File of type 8 saved to: /mnt/synology/motion/05-20200222124109.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 12:41:09] motion_detected: Motion detected - starting event 5
+[1:ml1] [NTC] [EVT] [Feb 22 12:41:09] event_newfile: File of type 1 saved to: /mnt/synology/motion/05-20200222124109-01.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 12:42:09] mlp_actions: End of event 5
+[1:ml1] [NTC] [EVT] [Feb 22 13:40:01] event_newfile: File of type 8 saved to: /mnt/synology/motion/06-20200222134001.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 13:40:01] motion_detected: Motion detected - starting event 6
+[1:ml1] [NTC] [EVT] [Feb 22 13:40:01] event_newfile: File of type 1 saved to: /mnt/synology/motion/06-20200222134001-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 13:40:02] event_newfile: File of type 1 saved to: /mnt/synology/motion/06-20200222134002-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 13:40:02] event_newfile: File of type 1 saved to: /mnt/synology/motion/06-20200222134002-01.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 13:41:02] mlp_actions: End of event 6
+[1:ml1] [NTC] [EVT] [Feb 22 14:37:25] event_newfile: File of type 8 saved to: /mnt/synology/motion/07-20200222143725.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 14:37:25] motion_detected: Motion detected - starting event 7
+[1:ml1] [NTC] [EVT] [Feb 22 14:37:25] event_newfile: File of type 1 saved to: /mnt/synology/motion/07-20200222143725-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 14:37:26] event_newfile: File of type 1 saved to: /mnt/synology/motion/07-20200222143726-00.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 14:38:26] mlp_actions: End of event 7
+[1:ml1] [NTC] [EVT] [Feb 22 14:38:48] event_newfile: File of type 8 saved to: /mnt/synology/motion/08-20200222143848.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 14:38:48] motion_detected: Motion detected - starting event 8
+[1:ml1] [NTC] [EVT] [Feb 22 14:38:48] event_newfile: File of type 1 saved to: /mnt/synology/motion/08-20200222143848-01.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 14:39:48] mlp_actions: End of event 8
+[1:ml1] [NTC] [EVT] [Feb 22 14:47:25] event_newfile: File of type 8 saved to: /mnt/synology/motion/09-20200222144725.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 14:47:25] motion_detected: Motion detected - starting event 9
+[1:ml1] [NTC] [EVT] [Feb 22 14:47:25] event_newfile: File of type 1 saved to: /mnt/synology/motion/09-20200222144725-00.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 14:48:25] mlp_actions: End of event 9
+[1:ml1] [NTC] [EVT] [Feb 22 14:56:50] event_newfile: File of type 8 saved to: /mnt/synology/motion/10-20200222145650.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 14:56:50] motion_detected: Motion detected - starting event 10
+[1:ml1] [NTC] [EVT] [Feb 22 14:56:50] event_newfile: File of type 1 saved to: /mnt/synology/motion/10-20200222145650-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 14:56:51] event_newfile: File of type 1 saved to: /mnt/synology/motion/10-20200222145651-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 14:56:55] event_newfile: File of type 1 saved to: /mnt/synology/motion/10-20200222145655-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 14:56:55] event_newfile: File of type 1 saved to: /mnt/synology/motion/10-20200222145655-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 14:56:56] event_newfile: File of type 1 saved to: /mnt/synology/motion/10-20200222145656-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 14:57:03] event_newfile: File of type 1 saved to: /mnt/synology/motion/10-20200222145703-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 14:57:08] event_newfile: File of type 1 saved to: /mnt/synology/motion/10-20200222145708-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 14:57:10] event_newfile: File of type 1 saved to: /mnt/synology/motion/10-20200222145710-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 14:57:11] event_newfile: File of type 1 saved to: /mnt/synology/motion/10-20200222145711-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 14:57:11] event_newfile: File of type 1 saved to: /mnt/synology/motion/10-20200222145711-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 14:57:12] event_newfile: File of type 1 saved to: /mnt/synology/motion/10-20200222145712-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 14:57:13] event_newfile: File of type 1 saved to: /mnt/synology/motion/10-20200222145713-00.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 14:58:13] mlp_actions: End of event 10
+[1:ml1] [NTC] [EVT] [Feb 22 15:34:11] event_newfile: File of type 8 saved to: /mnt/synology/motion/11-20200222153411.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 15:34:11] motion_detected: Motion detected - starting event 11
+[1:ml1] [NTC] [EVT] [Feb 22 15:34:11] event_newfile: File of type 1 saved to: /mnt/synology/motion/11-20200222153411-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:34:12] event_newfile: File of type 1 saved to: /mnt/synology/motion/11-20200222153412-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:34:12] event_newfile: File of type 1 saved to: /mnt/synology/motion/11-20200222153412-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:34:13] event_newfile: File of type 1 saved to: /mnt/synology/motion/11-20200222153413-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:34:13] event_newfile: File of type 1 saved to: /mnt/synology/motion/11-20200222153413-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:34:14] event_newfile: File of type 1 saved to: /mnt/synology/motion/11-20200222153414-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:34:17] event_newfile: File of type 1 saved to: /mnt/synology/motion/11-20200222153417-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:34:18] event_newfile: File of type 1 saved to: /mnt/synology/motion/11-20200222153418-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:34:18] event_newfile: File of type 1 saved to: /mnt/synology/motion/11-20200222153418-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:34:19] event_newfile: File of type 1 saved to: /mnt/synology/motion/11-20200222153419-00.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 15:35:19] mlp_actions: End of event 11
+[1:ml1] [NTC] [EVT] [Feb 22 15:38:35] event_newfile: File of type 8 saved to: /mnt/synology/motion/12-20200222153835.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 15:38:35] motion_detected: Motion detected - starting event 12
+[1:ml1] [NTC] [EVT] [Feb 22 15:38:35] event_newfile: File of type 1 saved to: /mnt/synology/motion/12-20200222153835-01.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 15:39:35] mlp_actions: End of event 12
+[1:ml1] [NTC] [EVT] [Feb 22 15:42:59] event_newfile: File of type 8 saved to: /mnt/synology/motion/13-20200222154259.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 15:42:59] motion_detected: Motion detected - starting event 13
+[1:ml1] [NTC] [EVT] [Feb 22 15:42:59] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154259-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:00] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154300-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:01] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154301-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:02] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154302-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:02] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154302-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:03] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154303-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:03] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154303-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:04] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154304-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:05] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154305-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:05] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154305-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:06] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154306-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:15] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154315-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:43] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154343-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:44] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154344-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:44] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154344-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:47] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154347-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:43:54] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154354-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:02] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154402-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:06] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154406-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:06] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154406-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:07] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154407-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:07] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154407-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:08] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154408-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:08] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154408-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:09] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154409-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:09] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154409-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:10] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154410-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:10] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154410-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:11] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154411-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:11] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154411-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:12] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154412-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:12] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154412-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:13] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154413-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:13] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154413-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:14] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154414-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:14] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154414-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:15] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154415-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:15] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154415-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:44:16] event_newfile: File of type 1 saved to: /mnt/synology/motion/13-20200222154416-00.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 15:45:16] mlp_actions: End of event 13
+[1:ml1] [NTC] [EVT] [Feb 22 15:45:32] event_newfile: File of type 8 saved to: /mnt/synology/motion/14-20200222154532.mkv
+[1:ml1] [NTC] [ALL] [Feb 22 15:45:32] motion_detected: Motion detected - starting event 14
+[1:ml1] [NTC] [EVT] [Feb 22 15:45:32] event_newfile: File of type 1 saved to: /mnt/synology/motion/14-20200222154532-00.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:45:32] event_newfile: File of type 1 saved to: /mnt/synology/motion/14-20200222154532-01.jpg
+[1:ml1] [NTC] [EVT] [Feb 22 15:45:33] event_newfile: File of type 1 saved to: /mnt/synology/motion/14-20200222154533-00.jpg
+[1:ml1] [NTC] [ALL] [Feb 22 15:46:33] mlp_actions: End of event 14
+[1:ml1] [NTC] [ALL] [Feb 22 15:48:28] mlp_actions: End of event 15
+[0:wc0] [NTC] [STR] [Feb 22 15:48:29] httpd_run: motion-httpd - Finishing
+[0:wc0] [NTC] [STR] [Feb 22 15:48:29] httpd_run: motion-httpd Closing
+[0:wc0] [NTC] [STR] [Feb 22 15:48:29] motion_web_control: motion-httpd thread exit
+[1:ml1] [NTC] [ALL] [Feb 22 15:48:29] motion_loop: Thread exiting
+[1:ml1] [NTC] [STR] [Feb 22 15:48:29] stream_stop: Closing motion-stream listen socket & active motion-stream sockets
+[1:ml1] [NTC] [STR] [Feb 22 15:48:29] stream_stop: Closed motion-stream listen socket & active motion-stream sockets
+[1:ml1] [NTC] [VID] [Feb 22 15:48:29] vid_close: Cleaning up V4L2 device
+[1:ml1] [NTC] [VID] [Feb 22 15:48:29] v4l2_cleanup: Closing video device /dev/video0
+[0:motion] [NTC] [ALL] [Feb 22 15:48:29] main: Threads finished
+[0:motion] [NTC] [ALL] [Feb 22 15:48:30] main: Motion terminating
+[0:motion] [NTC] [ALL] [Feb 22 15:48:30] motion_remove_pid: Removed process id file (pid file).
+[0:motion] [NTC] [ALL] [Feb 22 15:48:30] motion_remove_pid: Closing logfile (/home/pi/raspi/motion/motion.log).

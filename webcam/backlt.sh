@@ -35,5 +35,10 @@ dt=$(date +%Y%m%d%H%M%S)
 # capture the pic
 # : skip a few frames to let camera calc any "auto" settings
 #fswebcam --no-banner --skip 2 -r 640x480 pic_$dt.jpg
-fswebcam --no-banner --skip 2 --rotate 270 -r 1280x720 pic_$dt.jpg
+v4l2-ctl --set-ctrl=backlight_compensation=0
+fswebcam --no-banner --skip 2 --rotate 270 -r 480x640 pic_0_$dt.jpg
+v4l2-ctl --set-ctrl=backlight_compensation=1
+fswebcam --no-banner --skip 2 --rotate 270 -r 480x640 pic_1_$dt.jpg
+v4l2-ctl --set-ctrl=backlight_compensation=2
+fswebcam --no-banner --skip 2 --rotate 270 -r 480x640 pic_2_$dt.jpg
 
