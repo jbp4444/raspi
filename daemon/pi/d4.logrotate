@@ -1,0 +1,7 @@
+/var/log/local0.log {
+	rotate 20
+	daily
+	missingok
+	notifempty
+}
+

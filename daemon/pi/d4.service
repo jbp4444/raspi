@@ -1,0 +1,25 @@
+[Unit]
+Description=Temperature and humidity logging service
+After=multi-user.target
+
+[Service]
+Type=notify
+NotifyAccess=main
+ExecStart=/usr/bin/python /home/pi/code/d4.py
+ExecReload=/bin/kill -HUP $MAINPID
+WorkingDirectory=/tmp
+StandardInput=null
+StandardOutput=null
+StandardError=syslog
+SyslogIdentifier=d4
+SyslogFacility=local0
+SyslogLevel=info
+SyslogLevelPrefix=true
+DynamicUser=on
+#User=nonroot
+#Group=nonroot
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+

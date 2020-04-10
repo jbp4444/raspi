@@ -1,0 +1,10 @@
+[Unit]
+Description=Show IP-Addr
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /home/pi/raspi/showip.py
+
+[Install]
+WantedBy=multi-user.target
+
